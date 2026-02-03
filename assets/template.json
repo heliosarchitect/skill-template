@@ -1,0 +1,14 @@
+{
+  "example_template": {
+    "field1": "Replace this with your data",
+    "field2": 123,
+    "nested": {
+      "key": "value"
+    },
+    "array": [
+      "item1",
+      "item2"
+    ]
+  },
+  "instructions": "This is an example template file. Replace with your own assets, data files, or templates as needed."
+}
