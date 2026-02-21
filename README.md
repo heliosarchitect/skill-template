@@ -165,6 +165,16 @@ metadata:
 - [weather](https://github.com/openclaw/helios/skills/weather) - Get weather forecasts
 - [video-frames](https://github.com/openclaw/helios/skills/video-frames) - Extract video frames
 
+## CI Quality Gates
+
+This template now includes a default GitHub Actions workflow at `.github/workflows/ci.yml` that:
+- validates required `SKILL.md` frontmatter fields (`name`, `description`)
+- shell-lints `scripts/*.sh` with `bash -n`
+- syntax-checks Python scripts via `compileall`
+- runs smoke tests for the example scripts
+
+If you customize scripts, keep at least one lightweight smoke command per script so CI can catch regressions quickly.
+
 ## Publishing Checklist
 
 - [ ] SKILL.md frontmatter complete
